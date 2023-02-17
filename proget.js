@@ -2,10 +2,8 @@
 
 function calculTip() {
   const billAmount = document.getElementById("billAmount").value;
-
   const serviceQuality = document.getElementById("serviceQuality").value;
-
-  const numPeople = document.getElementById("numPeople");
+  const numPeople = document.getElementById("numPeople").value;
 
   //let's make condition in case customer enter wrong value
   if (billAmount === "" || serviceQuality === 0) {
@@ -18,10 +16,18 @@ function calculTip() {
     numPeople = 1;
   }
 
-  let total = (billAmount * serviceQuality) / 1;
+  let total = (billAmount * serviceQuality) / numPeople;
 
   window.alert(total.toFixed(2));
 }
 document.getElementById("btn").onclick = function () {
   calculTip();
 };
+//how to use set intervall function in javascript
+let count = 0;
+let interval = setInterval(() => {
+  console.log(count);
+  count = count + 1;
+}, 1000);
+//how to clear the intervall in javascript
+clearInterval(interval);
