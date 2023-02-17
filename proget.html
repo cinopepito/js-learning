@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="proget.css">
+  </head>
+  <body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <hr />
+        <form action="">
+          <div>
+            <label for="billAmount">How was your bill ?</label><br />
+            $ <input id="billAmount" type="text" placeholder="enter your bill" />
+          </div>
+          <div>
+            <label for="serviceQuality">How was your service?</label>
+            <select name="" id="serviceQuality">
+              <option disabled selected value="0">-- choose an option --</option>
+              <option value="0.3">30% outstanding</option>
+              <option value="0.2">20% very good</option>
+              <option value="0.1">10% Good</option>
+              <option value="0.05">5% Bad</option>
+            </select><br>
+            <div>
+                <label for="">How many people are sharing the bill ?</label>
+                <input type="text"placeholder="enter number of person" id="numPeople"> people
+            </div>
+           <button id="btn">Calculate</button>
+          </div>
+    </div>
+    
+    </form>
+    <script src="proget.js"></script>
+  </body>
+</html>

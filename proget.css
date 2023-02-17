@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container {
+  width: 80%;
+  min-height: 50vh;
+  background: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.2);
+}
+form div {
+  margin: 20px 0;
+}
+input,
+label {
+  display: block;
+  font-size: 20px;
+}
+#btn {
+  padding: 10px 15px;
+  background: rgb(107, 36, 36);
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+input{
+    padding: 10px;
+}
+select{
+    padding: 10px;
+}
